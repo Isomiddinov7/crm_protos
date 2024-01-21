@@ -2,7 +2,7 @@ syntax = "proto3";
 
 option go_package = "genproto/users_proto";
 
-package users_proto;
+package users_service;
 
 import "google/protobuf/empty.proto";
 
