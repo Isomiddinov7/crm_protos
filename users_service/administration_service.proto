@@ -3,6 +3,8 @@ syntax = "proto3";
 option go_package = "genproto/users_service";
 
 package users_service;
+import "teacher_service.proto";
+
 
 service AdministrationService{
     rpc Create(CreateAdministration) returns (Administration){}
@@ -13,7 +15,6 @@ service AdministrationService{
     
 }
 
-message Empty{}
 
 message AdministrationPrimaryKey{
     string id = 1;
