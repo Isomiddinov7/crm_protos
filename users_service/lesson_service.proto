@@ -4,6 +4,7 @@ option go_package = "genproto/users_service";
 
 package users_service;
 import "teacher_service.proto";
+import "task_service.proto";
 
 
 service LessonService{
@@ -20,18 +21,19 @@ message LessonPrimaryKey{
 
 message Lesson{
     string id = 1;
-    string task = 2;
-    string created_at = 3;
-    string updated_at = 4;
+    string task_id = 2;
+    Task task = 3;
+    string created_at = 4;
+    string updated_at = 5;
 }
 
 message CreateLesson{
-    string task = 1;
+    string task_id = 1;
 }
 
 message UpdateLesson{
     string id = 1;
-    string task = 2;
+    string task_id = 2;
 }
 
 message GetListLessonRequest{
