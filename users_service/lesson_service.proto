@@ -12,7 +12,7 @@ service LessonService{
     rpc GetById(LessonPrimaryKey) returns(Lesson){}
     rpc GetList(GetListLessonRequest) returns(GetListLessonResponse){}
     rpc Update(UpdateLesson) returns(Lesson){}
-    rpc Delete(LessonPrimaryKey) returns(google.protobuf.Empty){}
+    rpc Delete(LessonPrimaryKey) returns(Empty){}
 }
 
 message LessonPrimaryKey{
