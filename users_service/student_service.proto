@@ -4,14 +4,14 @@ option go_package = "genproto/users_service";
 
 package users_service;
 
-import "google/protobuf/empty.proto";
+import "teacher_service.proto";
 
 service StudentService{
     rpc Create(CreateStudent) returns(Student){}
     rpc GetById(StudentPrimaryKey) returns(Student){}
     rpc GetList(GetListStudentRequest) returns(GetListStudentResponse){}
     rpc Update(UpdateStudent) returns(Student){}
-    rpc Delete(StudentPrimaryKey) returns(google.protobuf.Empty){}
+    rpc Delete(StudentPrimaryKey) returns(Empty){}
 }
 
 

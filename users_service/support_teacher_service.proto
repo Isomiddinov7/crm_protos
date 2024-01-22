@@ -3,14 +3,14 @@ syntax = "proto3";
 option go_package = "genproto/users_service";
 
 package users_service;
-import "google/protobuf/empty.proto";
+import "teacher_service.proto";
 
 service SupportTeacherService{
     rpc Create(CreateSupportTeacher) returns (SupportTeacher){}
     rpc GetById(SupportTeacherPrimaryKey) returns (SupportTeacher){}
     rpc GetList(GetListSupportTeacherRequest) returns (GetListSupportTeacherResponse){}
     rpc Update(UpdateSupportTeacher) returns (SupportTeacher){}
-    rpc Delete(SupportTeacherPrimaryKey) returns (google.protobuf.Empty){}
+    rpc Delete(SupportTeacherPrimaryKey) returns (Empty){}
     
 }
 
