@@ -1,0 +1,56 @@
+syntax = "proto3";
+option go_package = "genproto/users_service";
+package users_service;
+import "teacher_service.proto";
+
+service EventService{
+    rpc Create(CreateEvent) returns (Event){}
+    rpc GetById(EventPrimaryKey) returns (Event){}
+    rpc GetList(GetListEventRequest) returns (GetListEventResponse){}
+    rpc Update(UpdateEvent) returns (Event){}
+    rpc Delete(EventPrimaryKey) returns (Empty){}
+}
+
+message EventPrimaryKey{
+    string id = 1;
+}
+
+message Event{
+    string id = 1;
+    string assign_students = 2;
+    string topic = 3;
+    string start_time = 4;
+    string day = 5;
+    string branch_id = 6;
+    string created_at = 7;
+    string updated_at = 8; 
+}
+
+
+message CreateEvent{
+    string assign_students = 1;
+    string topic = 2;
+    string start_time = 3;
+    string day = 4;
+    string branch_id = 5;
+}
+
+message UpdateEvent{
+    string id = 1;
+    string assign_students = 2;
+    string topic = 3;
+    string start_time = 4;
+    string day = 5;
+    string branch_id = 6;
+}
+
+message GetListEventRequest{
+    int64 offset = 1;
+    int64 limit = 2;
+    string search = 3;
+}
+
+message GetListEventResponse{
+    int64 count = 1;
+    repeated Event events = 2;
+}

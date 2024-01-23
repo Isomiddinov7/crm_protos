@@ -3,7 +3,6 @@ syntax = "proto3";
 option go_package = "genproto/users_service";
 package users_service;
 import "teacher_service.proto";
-import "lesson_service.proto";
 
 service ScheduleService{
     rpc Create(CreateSchedule) returns(Schedule){}
@@ -25,7 +24,6 @@ message Schedule{
     string lesson_id = 4;
     string created_at = 5;
     string updated_at = 6;
-    Lesson lesson = 7;
 }
 
 

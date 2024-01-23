@@ -1,0 +1,53 @@
+syntax = "proto3";
+
+option go_package = "genproto/users_service";
+package users_service;
+import "teacher_service.proto";
+
+service BranchService{
+    rpc Create(CreateBranch) returns (Branch){}
+    rpc GetById(BranchPrimaryKey) returns (Branch){}
+    rpc GetList(GetListBranchRequest) returns (GetListBranchResponse){}
+    rpc Update(UpdateBranch) returns (Branch){}
+    rpc Delete(BranchPrimaryKey) returns (Empty){}
+}
+
+message BranchPrimaryKey{
+    string id = 1;
+}
+
+message Branch{
+    string id = 1;
+    string teacher_id = 2;
+    string support_teacher_id = 3;
+    string student_id = 4;
+    string group_id = 5;
+    string created_at = 6;
+    string updated_at = 7;
+}
+
+message CreateBranch{
+    string teacher_id = 1;
+    string support_teacher_id = 2;
+    string student_id = 3;
+    string group_id = 4;
+}
+
+message UpdateBranch{
+    string id = 1;
+    string teacher_id = 2;
+    string support_teacher_id = 3;
+    string student_id = 4;
+    string group_id = 5;
+}
+
+message GetListBranchRequest{
+    int64 offset = 1;
+    int64 limit = 2;
+    string search = 3;
+}
+
+message GetListBranchResponse{
+    int64 count = 1;
+    repeated Branch branchs = 2;
+}
