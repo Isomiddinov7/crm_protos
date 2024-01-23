@@ -6,7 +6,7 @@ import "teacher_service.proto";
 service SchedulesService{
     rpc Create(CreateSchedules) returns (Schedules){}
     rpc GetById(SchedulesPrimaryKey) returns (Schedules){}
-    rpc GetList(GetListScheduleRequest) returns (GetListScheduleResponse){}
+    rpc GetList(GetListSchedulesRequest) returns (GetListSchedulesResponse){}
     rpc Update(UpdateSchedules) returns (Schedules){}
     rpc Delete(SchedulesPrimaryKey) returns (Empty){}
 }
