@@ -53,13 +53,13 @@ message UpdateSchedules{
     string support_teacher_id = 9;
 }
 
-message GetListScheduleRequest{
+message GetListSchedulesRequest{
     int64 offset = 1;
     int64 limit = 2;
     string search = 3;
 }
 
-message GetListScheduleResponse{
+message GetListSchedulesResponse{
     int64 count = 1;
     repeated Schedules schedules = 2;
 }
