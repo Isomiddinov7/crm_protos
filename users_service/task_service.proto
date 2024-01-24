@@ -31,8 +31,6 @@ message CreateTask{
     string label = 1;
     string deadline = 2;
     string score = 3;
-    string created_at = 4;
-    string updated_at = 5;
 }
 
 message UpdateTask{

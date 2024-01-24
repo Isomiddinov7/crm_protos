@@ -31,8 +31,6 @@ message CreateSchedule{
     string start_time = 1;
     string end_time = 2;
     string lesson_id = 3;
-    string created_at = 4;
-    string updated_at = 5;
 }
 
 message UpdateSchedule{

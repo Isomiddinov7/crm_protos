@@ -33,8 +33,6 @@ message CreateJournal{
     string from = 2;
     string to = 3;
     string student_id = 4;
-    string created_at = 5;
-    string updated_at = 6;
 }
 
 message UpdateJournal{
