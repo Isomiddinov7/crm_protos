@@ -18,27 +18,30 @@ message BranchPrimaryKey{
 
 message Branch{
     string id = 1;
+    string name = 2;
+    string teacher_id = 3;
+    string support_teacher_id = 4;
+    string student_id = 5;
+    string group_id = 6;
+    string created_at = 7;
+    string updated_at = 8;
+}
+
+message CreateBranch{
+    string name = 1;
     string teacher_id = 2;
     string support_teacher_id = 3;
     string student_id = 4;
     string group_id = 5;
-    string created_at = 6;
-    string updated_at = 7;
-}
-
-message CreateBranch{
-    string teacher_id = 1;
-    string support_teacher_id = 2;
-    string student_id = 3;
-    string group_id = 4;
 }
 
 message UpdateBranch{
     string id = 1;
-    string teacher_id = 2;
-    string support_teacher_id = 3;
-    string student_id = 4;
-    string group_id = 5;
+    string name = 2;
+    string teacher_id = 3;
+    string support_teacher_id = 4;
+    string student_id = 5;
+    string group_id = 6;
 }
 
 message GetListBranchRequest{
