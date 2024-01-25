@@ -3,6 +3,7 @@ syntax = "proto3";
 option go_package = "genproto/users_service";
 
 package users_service;
+import "teacher_service.proto";
 
 service ScoreService{
     rpc Create(CreateScore) returns (Score){}
@@ -12,8 +13,6 @@ service ScoreService{
     rpc Delete(ScorePrimaryKey) returns (Empty){}
     
 }
-
-message Empty{}
 
 message ScorePrimaryKey{
     string id = 1;
