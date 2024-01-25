@@ -22,7 +22,7 @@ message Task{
     string lesson_id = 2;
     string label = 3;
     string deadline = 4;
-    string score = 5;
+    int64 score = 5;
     string created_at = 6;
     string updated_at = 7;
 }
@@ -32,7 +32,7 @@ message CreateTask{
     string lesson_id = 1;
     string label = 2;
     string deadline = 3;
-    string score = 4;
+    int64 score = 4;
 }
 
 message UpdateTask{
@@ -40,7 +40,7 @@ message UpdateTask{
     string lesson_id = 2;
     string label = 3;
     string deadline = 4;
-    string score = 5;
+    int64 score = 5;
 }
 
 message GetListTaskRequest{
