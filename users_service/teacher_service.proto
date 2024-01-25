@@ -24,30 +24,38 @@ message Teacher{
     string full_name = 2;
     string phone = 3;
     string salary = 4;
-    string months_worked = 5;
-    string total_sum = 6;
-    string ielts_score = 7;
-    string created_at = 8;
-    string updated_at = 9;
+    string password = 5;
+    string login = 6;
+    string role_id = 7;
+    string months_worked = 8;
+    string total_sum = 9;
+    string ielts_score = 10;
+    string created_at = 11;
+    string updated_at = 12;
 }
 
 message CreateTeacher {
     string full_name = 1;
     string phone = 2;
     string salary = 3;
-    string months_worked = 4;
-    string total_sum = 5;
-    string ielts_score = 6;
+    string password = 4;
+    string login = 5;
+    string role_id = 6;
+    string months_worked = 7;
+    string total_sum = 8;
+    string ielts_score = 9;
 }
-
 message UpdateTeacher {
     string id = 1;
     string full_name = 2;
     string phone = 3;
     string salary = 4;
-    string months_worked = 5;
-    string total_sum = 6;
-    string ielts_score = 7;
+    string password = 5;
+    string login = 6;
+    string role_id = 7;
+    string months_worked = 8;
+    string total_sum = 9;
+    string ielts_score = 10;
 }
 
 message GetListTeacherRequest{

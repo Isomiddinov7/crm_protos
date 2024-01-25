@@ -21,7 +21,7 @@ message Schedule{
     string id = 1;
     string start_time = 2;
     string end_time = 3;
-    string lesson_id = 4;
+    string journal_id = 4;
     string created_at = 5;
     string updated_at = 6;
 }
@@ -30,14 +30,14 @@ message Schedule{
 message CreateSchedule{
     string start_time = 1;
     string end_time = 2;
-    string lesson_id = 3;
+    string journal_id = 3;
 }
 
 message UpdateSchedule{
     string id = 1;
     string start_time = 2;
     string end_time = 3;
-    string lesson_id = 4;
+    string journal_id = 4;
 }
 
 message GetListScheduleRequest{

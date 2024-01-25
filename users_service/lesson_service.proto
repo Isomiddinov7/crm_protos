@@ -20,18 +20,21 @@ message LessonPrimaryKey{
 
 message Lesson{
     string id = 1;
-    string task_id = 2;
-    string created_at = 3;
-    string updated_at = 4;
+    string schedule_id = 2;
+    string lesson = 3;
+    string created_at = 4;
+    string updated_at = 5;
 }
 
 message CreateLesson{
-    string task_id = 1;
+    string schedule_id = 1;
+    string lesson = 2;
 }
 
 message UpdateLesson{
     string id = 1;
-    string task_id = 2;
+    string schedule_id = 2;
+    string lesson = 3;
 }
 
 message GetListLessonRequest{

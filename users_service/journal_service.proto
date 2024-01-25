@@ -19,7 +19,7 @@ message JournalPrimaryKey{
 
 message Journal{
     string id = 1;
-    string schedules_id = 2;
+    string group_id = 2;
     string from = 3;
     string to = 4;
     string student_id = 5;
@@ -29,7 +29,7 @@ message Journal{
 
 
 message CreateJournal{
-    string schedules_id = 1;
+    string group_id = 1;
     string from = 2;
     string to = 3;
     string student_id = 4;
@@ -37,7 +37,7 @@ message CreateJournal{
 
 message UpdateJournal{
     string id = 1;
-    string schedules_id = 2;
+    string group_id = 2;
     string from = 3;
     string to = 4;
     string student_id = 5;

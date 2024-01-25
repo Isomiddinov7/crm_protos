@@ -18,31 +18,31 @@ message GroupPrimaryKey{
 
 message Group{
     string id = 1;
-    string teacher_id = 2;
-    string support_teacher_id = 3;
-    string journal_id = 4;
-    string branch_id = 5;
-    string type = 6;
+    string uniqueID = 2;
+    string branch_id = 3;
+    string type = 4;
+    string teacher_id = 5;
+    string support_teacher_id = 6;
     string created_at = 7;
-    string updated_at = 8; 
+    string updated_at = 8;
 }
 
 message CreateGroup{
-    string teacher_id = 1;
-    string support_teacher_id = 2;
-    string journal_id = 3;
-    string branch_id = 4;
-    string type = 5;
+    string uniqueID = 1;
+    string branch_id = 2;
+    string type = 3;
+    string teacher_id = 4;
+    string support_teacher_id = 5;
 }
 
 
 message UpdateGroup{
     string id = 1;
-    string teacher_id = 2;
-    string support_teacher_id = 3;
-    string journal_id = 4;
-    string branch_id = 5;
-    string type = 6;
+    string uniqueID = 2;
+    string branch_id = 3;
+    string type = 4;
+    string teacher_id = 5;
+    string support_teacher_id = 6;
 }
 
 message GetListGroupRequest{

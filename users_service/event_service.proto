@@ -17,31 +17,28 @@ message EventPrimaryKey{
 
 message Event{
     string id = 1;
-    string assign_students = 2;
-    string topic = 3;
-    string start_time = 4;
-    string day = 5;
-    string branch_id = 6;
-    string created_at = 7;
+    string topic = 2;
+    string start_time = 3;
+    string day = 4;
+    string branch_id = 5;
+    string created_at = 6;
     string updated_at = 8; 
 }
 
 
 message CreateEvent{
-    string assign_students = 1;
-    string topic = 2;
-    string start_time = 3;
-    string day = 4;
-    string branch_id = 5;
+    string topic = 1;
+    string start_time = 2;
+    string day = 3;
+    string branch_id = 4;
 }
 
 message UpdateEvent{
     string id = 1;
-    string assign_students = 2;
-    string topic = 3;
-    string start_time = 4;
-    string day = 5;
-    string branch_id = 6;
+    string topic = 2;
+    string start_time = 3;
+    string day = 4;
+    string branch_id = 5;
 }
 
 message GetListEventRequest{

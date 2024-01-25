@@ -20,8 +20,6 @@ message RolePrimaryKey{
 message Role{
     string id = 1;
     string role = 2;
-    string created_at = 3;
-    string updated_at = 4;
 }
 
 
