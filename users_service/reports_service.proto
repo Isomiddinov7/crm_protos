@@ -7,10 +7,15 @@ service ReportService {
     rpc GetSupportTeacher(ReportRequest) returns (SupportTeacherList) {}
     rpc GetAdministrator(ReportRequest) returns (AdminList) {}
     rpc GetTeacher(ReportRequest) returns (TeacherList) {}
+    rpc TeacherReportStudentList(GroupId) returns (StudentList) {}
 }
 
 message ReportRequest{
     string branch_id = 1;
+}
+
+message GroupId{
+    string group_id = 1;
 }
 
 message StudentList {
