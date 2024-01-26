@@ -36,7 +36,7 @@ message GetTeacher {
     string password = 4;
     string login = 5;
     string months_worked = 6;
-    double total_sum = 7;
+    string total_sum = 7;
     string ielts_score = 8;
 }
 
@@ -51,7 +51,7 @@ message GetSupportTeacher {
     string password = 4;
     string login = 5;
     string months_worked = 6;
-    double total_sum = 7;
+    string total_sum = 7;
     string ielts_score = 8;
 }
 
@@ -64,8 +64,8 @@ message GetAdministrator {
     string phone = 2;
     string password = 3;
     string login = 4;
-    int64 salary = 5;
-    double ielts_score = 6;
+    string salary = 5;
+    string ielts_score = 6;
 }
 
 message TeacherId {
