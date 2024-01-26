@@ -10,6 +10,7 @@ service TeacherService{
     rpc GetList(GetListTeacherRequest) returns (GetListTeacherResponse){}
     rpc Update(UpdateTeacher) returns (Teacher){}
     rpc Delete(TeacherPrimaryKey) returns (Empty){}
+    rpc TeacherReportStudent(TeacherPrimaryKey) returns (TeacherReportStudentList){}
     
 }
 
