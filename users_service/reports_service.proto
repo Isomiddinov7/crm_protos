@@ -21,9 +21,9 @@ message StudentList {
 message GetStudent  {
     string full_name = 1;
     string phone = 2;
-    double paid_sum = 3;
-    int64 cource_count = 4;
-    double total_sum = 5;
+    string paid_sum = 3;
+    string cource_count = 4;
+    string total_sum = 5;
 }
 message TeacherList {
     repeated GetTeacher teacher_list = 1;
