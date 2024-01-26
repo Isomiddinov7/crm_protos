@@ -7,7 +7,6 @@ service ReportService {
     rpc GetSupportTeacher(ReportRequest) returns (SupportTeacherList) {}
     rpc GetAdministrator(ReportRequest) returns (AdminList) {}
     rpc GetTeacher(ReportRequest) returns (TeacherList) {}
-    rpc TeacherReport(TeacherId) returns (TeacherList) {}
 }
 
 message ReportRequest{
