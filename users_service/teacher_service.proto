@@ -21,9 +21,10 @@ message TeacherPrimaryKey{
 }
 
 message TeacherReportStudentList{
-    string student_name = 1;
-    string student_count = 2;
-    string lesson = 3;
+    string teacher_name = 1;
+    string student_name = 2;
+    string student_count = 3;
+    string lesson = 4;
 }
 message Teacher{
     string id = 1;
